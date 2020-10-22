@@ -1,65 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="descrition" content="This is Yuugo personal site. It's made with vanillaJS and TailwindCSS. ">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>Front Page</title>
+    <script src="https://kit.fontawesome.com/a909981d4a.js" crossorigin="anonymous"></script>
+    <title>Yuugo Portifolio</title>
 </head>
-<body class="w-full">
-    <section name="header" class="bg-gray-900 w-full h-56 text-white" >
-        <div class="container">
-            <nav>
-                <ul class="flex float-right">
-                    <a href="#projects"><li class="mr-6 my-2">Projects</li></a>
-                    <a href="#games"><li class="mr-6 my-2">Games</li></a>
-                    <a href="#blog"><li class="mr-6 my-2">Blog</li></a>
-                </ul>
-            </nav>   
+<body class="w-full bg-orange-100 font-medium">
+    <header class="h-64 text-gray-900 container mx-auto mt-1" >
+        <nav class="flex flex-row-reverse">
+            <ul class="flex flex-col text-right text-xl font-normal">
+                <a href="#projects">
+                    <li class="header mr-6 my-1">
+                        Projects <span class="mt-2"></span><i class="fas fa-heart"></i></span>
+                    </li>
+                </a>
+                <a href="#games">
+                    <li class="header mr-6 my-1">
+                        Games <span class="mt-1"></span><i class="fas fa-chess-knight"></i></span>
+                    </li>
+                </a>
+                <a href="#blog">
+                    <li class="header mr-6 my-1">
+                    Blog <span class="mt-1"><i class="fas fa-shield-alt"></i></span>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="flex justify-between mt-16">
+            <p class="header text-5xl">Yuugo Developer</p>
+            <div class="text-5xl invisible lg:visible flex">
+                <div class="animatedHeaderIcon1"><i class="fas fa-republican"></i></div>
+                <div class="animatedHeaderIcon2"><i class="fas fa-democrat"></i></div>
+                <div class="animatedHeaderIcon3"><i class="fas fa-dove"></i></div>
+            </div>
         </div>
-        <div class="flex flex-col items-center w-full h-full justify-center text-center">
-            <h1 class="self-center text-3xl text-white -mt-16">YUUGO.DEV</h1>
-            <h3 class="self-center text-white">Front-end · Gamedev · Mobile developer</h3>
-        </div>
-    </section>
-    <section class="flex justify-center">
-        <div class="container m-4">
-            This is the beta version of this page.
-        </div>
-    </section>
-    <section class="flex justify-center">
-        <div class="container m-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus, laboriosam enim est mollitia ipsum numquam velit nulla, et amet excepturi quasi ad eius porro corporis rerum soluta facere cumque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione quos odio eveniet voluptatibus temporibus est, dicta optio minus deserunt itaque recusandae vitae aspernatur fuga reiciendis ullam illo voluptatum sit!
-        </div>
-    </section>
-    <section class="flex justify-center">
-        <div class="container m-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus, laboriosam enim est mollitia ipsum numquam velit nulla, et amet excepturi quasi ad eius porro corporis rerum soluta facere cumque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione quos odio eveniet voluptatibus temporibus est, dicta optio minus deserunt itaque recusandae vitae aspernatur fuga reiciendis ullam illo voluptatum sit!
-        </div>
-    </section>
-    <section class="flex justify-center">
-        <div class="container m-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus, laboriosam enim est mollitia ipsum numquam velit nulla, et amet excepturi quasi ad eius porro corporis rerum soluta facere cumque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione quos odio eveniet voluptatibus temporibus est, dicta optio minus deserunt itaque recusandae vitae aspernatur fuga reiciendis ullam illo voluptatum sit!
-        </div>
-    </section>
-    <section class="flex justify-center">
-        <div class="container m-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus, laboriosam enim est mollitia ipsum numquam velit nulla, et amet excepturi quasi ad eius porro corporis rerum soluta facere cumque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione quos odio eveniet voluptatibus temporibus est, dicta optio minus deserunt itaque recusandae vitae aspernatur fuga reiciendis ullam illo voluptatum sit!
-        </div>
-    </section>
-    <section class="flex justify-center" id="projects" name="projects">
-        <div class="container m-4">
-            I want to scroll here....
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloribus, laboriosam enim est mollitia ipsum numquam velit nulla, et amet excepturi quasi ad eius porro corporis rerum soluta facere cumque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione quos odio eveniet voluptatibus temporibus est, dicta optio minus deserunt itaque recusandae vitae aspernatur fuga reiciendis ullam illo voluptatum sit!
-        </div>
-    </section>
+    </header>
+    <div class="w-full h-full bg-gray-900 text-orange-100">
+        <section class="flex justify-center">
+            <div class="container text-xl italic mt-3 ml-8 h-24">
+                Front-end · Gamedev · Mobile developer
+            </div>
+        </section>
+        <section class="flex justify-center text-xl">
+            <div class="container m-4">
+                <p class="max-w-3xl">
+                    Hi, my name is Hugo and I'm a web developer based in São Paulo, Brazil. I thrive on challenges and seek for knowledge everyday to sharp my skills. 
+                </p>
+                <p class="max-w-3xl">
+                    Right now I'm  
+                </p>
+            </div>
+        </section>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
     <script src="scrollBehavior.js"></script>
 </body>
 </html>
