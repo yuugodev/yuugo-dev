@@ -40,6 +40,15 @@ code {
     animation-iteration-count: infinite;
 }
 
+.fadein {
+    animation: myanimation 1.5s;
+}
+
+@keyframes myanimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 @-webkit-keyframes swing
 {
     15%
