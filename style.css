@@ -8,15 +8,15 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
   }
-  
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 .header::selection {
     color: #fffff0;
     background-color: #1a202c;
+}
+
+.body::selection {
+    color: #1a202c;
+    background-color: #fffff0;
 }
 
 .animatedHeaderIcon1 {
