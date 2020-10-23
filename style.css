@@ -9,12 +9,22 @@ html, body {
     overflow-x: hidden;
   }
 
+.test-width {
+    width: 46%;
+}
+
+@media (max-width: 1200px) {
+    .test-width {
+        width: 90%;
+    }    
+}
+
 .header::selection {
     color: #fffff0;
     background-color: #1a202c;
 }
 
-.body::selection {
+h5::selection, h3::selection, p::selection {
     color: #1a202c;
     background-color: #fffff0;
 }

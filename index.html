@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta name="descrition" content="This is Yuugo personal site. It's made with vanillaJS and TailwindCSS. ">
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -24,7 +26,7 @@
                         Games
                     </li>
                 </a>
-                <a href="#blog">
+                <a href="https://blog.yuugo.dev" target="_blank">
                     <li class="header mr-6 my-1">
                         Blog
                     </li>
@@ -32,8 +34,8 @@
             </ul>
         </nav>
         <div class="flex justify-between mt-16 ml-3 lg:ml-0">
-            <p class="header text-5xl">
-                Yuugo <span class="invisible lg:visible">Developer</span>
+            <p class="header text-5xl mt-1">
+                Yuugo <span class="invisible lg:visible header">Developer</span>
             </p>
             <div class="text-5xl invisible lg:visible flex mr-6 ">
                 <div class="animatedHeaderIcon1 mx-1"><i class="fas fa-republican"></i></div>
@@ -45,7 +47,7 @@
     <div class="w-full h-full bg-gray-900 text-orange-100">
         <section class="flex justify-center">
             <div id="greeting" class="container text-xl italic mt-3 ml-8 h-24 fadein body">
-                Front-end Developer · Gamedev Enthusiast
+                <h5>Front-end Developer · Gamedev Enthusiast</h5>
             </div>
         </section>
         <section class="flex justify-center text-xl">
@@ -60,31 +62,45 @@
                     To know more about me, you can see my <a href="https://blog.yuugo.dev" target="_blank" class="italic" >blog here </a> or follow me at:
                 </p>
                 <div class="flex mb-8 text-3xl">
-                    <div class="mx-2"><i class="fab fa-github"></i></div>
-                    <div class="mx-2"><i class="fab fa-stack-overflow"></i></div>
-                    <div class="mx-2"><i class="fab fa-medium-m"></i></div>
-                    <div class="mx-2"><i class="fab fa-youtube"></i></div>
-                    <div class="mx-2"><i class="fab fa-twitter"></i></div>
+                    <a href="https://github.com/yuugodev" class="mx-2">
+                        <i class="fab fa-github"></i></a>
+                    <a href="https://stackoverflow.com/users/14504871/yuugodev" class="mx-2">
+                        <i class="fab fa-stack-overflow"></i></a>
+                    <a href="https://medium.com/@yuugodev" class="mx-2">
+                        <i class="fab fa-medium-m"></i></a>
+                    <a href="https://www.youtube.com/channel/UCICfx_I5U4dNRlXQiZWkaiQ" class="mx-2">
+                        <i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/yuugodev" class="mx-2">
+                        <i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </section>
         <section id="projects" class="container mx-auto text-xl">
-            <h1 class="text-4xl my-3 mb-8">Projects</h1>
-            <p class="mb-8">Here some projects I'm working in:</p>
+            <h3 class="text-4xl my-3 mb-8">Projects</h1>
+            <p class="mb-8">Here some projects I'm working on:</p>
             <div class="flex justify-center flex-wrap">
-                <div class="border-2 rounded-md border-solid border-orange-100 m-4 h-56 w-11/12 lg:w-5/12">test</div>
-                <div class="border-2 rounded-md border-solid border-orange-100 m-4 h-56 w-11/12 lg:w-5/12">test</div>
-                <div class="border-2 rounded-md border-solid border-orange-100 m-4 h-56 w-11/12 lg:w-5/12">test</div>
-                <div class="border-2 rounded-md border-solid border-orange-100 m-4 h-56 w-11/12 lg:w-5/12">test</div>
+                <div class="border-2 rounded-md border-solid border-orange-100 m-2 lg:h-56 test-width md:11/12 sm:11/12 flex flex-wrap">
+                    <img src="screen.png" class="h-full lg:w-1/2 w-full">
+                    <div class="h-full lg:w-1/2 w-full">
+                        <h4>Image Gallery</h4>
+                        <p>link · source</p>
+                        <p>This is a react app where anyone can upload and view shared images. It was made using react and firebase for store images</p>
+                    </div>
+                </div>
+                <div class="border-2 rounded-md border-solid border-orange-100 m-2 h-56 test-width md:11/12">test</div>
+                <div class="border-2 rounded-md border-solid border-orange-100 m-2 h-56 test-width">test</div>
+                <div class="border-2 rounded-md border-solid border-orange-100 m-2 h-56 test-width">test</div>
             </div>
         </section>
         <section id="games" class="container mx-auto text-xl">
-            <h1 class="text-4xl my-3 mb-8">Games</h1>
-            <p class="mb-8">Here some projects I'm working in:</p>    
+            <h3 class="text-4xl my-3 mb-8">Games</h1>
+            <p class="mb-8 max-w-3xl">I'm developing he a game called project possession. It's a visual novel / sidescroller where the player is a ghost and have the power to possess their friends to help them. It's in early stage, but soon I shall provide some more images and informtion about.</p>    
         </section>
-        <br />
-        <br />
-        <br />
+        <footer>
+            <p class="p-4 text-center">
+                version 1.0.0 · layout by Yuugo - 2020 · made with ❤
+            </p>
+        </footer>
     </div>
     <script src="App.js"></script>
     <script src="ScrollBehavior.js"></script>
